@@ -1,7 +1,7 @@
 Project 3: Cancer Transcriptome Analysis
 ========================================
 
-- [Project: Cancer Transcriptome Analysis](#project-cancer-transcriptome-analysis)
+- [Project 3: Cancer Transcriptome Analysis](#project-3-cancer-transcriptome-analysis)
   - [Introduction](#introduction)
   - [Objectives](#objectives)
   - [Datasets](#datasets)
@@ -23,7 +23,7 @@ Supervisors:
 - **Dina ElHarouni** (d.elharouni@dkfz-heidelberg.de)
 
 Tutor:
-- TBD
+- Matteo Spatuzzi
 
 ## Introduction
 
@@ -81,7 +81,7 @@ figshare. Download and unzip the data for your project + the GTEX data
 - Colon/rectum [Figshare](https://figshare.com/s/34f62bb2ec511e6154f9)
 - Skin [Figshare](https://figshare.com/s/a5963d1e5f133fe86bea)
 - Liver [Figshare](https://figshare.com/s/f6b76e20845c5355c68c)
-- GTEX tissue Reference data [Figshare](https://figshare.com/s/b63c7cf3b515772b711d)
+- GTEX tissue Reference data [Figshare](https://figshare.com/s/d58d776f88d99294a860)
 
 The GTEX tissue reference data will function as a normal tissue sample baseline for differential expression analysis.
 
@@ -98,9 +98,12 @@ Structure of the zip file:
 - specimen.tsv.gz
   - Specimen information from ICGC.
 
-
 Donors are linked to samples via: DonorID(DO...)-SpecimenID(SP...)-SampleID(SA..)
 More information can be found at the [ICGC DCC documentation website](https://docs.icgc.org/).The breast cancer dataset has a few extra files, which you can use but don't have to. 
+
+The GTEX file holds all GTEX samples associated with the data and is saved as
+a .RDS.gz file which can be loaded into R using `readRDS()`. This object contains
+a table with the read counts for these samples + an table with the sample annotations.
 
 ## Recommended Literature
 
